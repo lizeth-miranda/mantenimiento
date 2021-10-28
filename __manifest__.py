@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Mantenimiento Demsa',
-    'version': '13.1',
+    'version': '13.2',
     'author': 'Demsa',
     'website': '',
     'depends': [
@@ -9,8 +9,8 @@
     ],
     'data': [
         # security
-        #'security/groupsRefa.xml',
-        #'security/ir.model.access.csv',
+        'security/groupsRefa.xml',
+        'security/ir.model.access.csv',
         # data
         'data/sequence.xml',
         # wizards

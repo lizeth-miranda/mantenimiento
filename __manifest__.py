@@ -9,14 +9,14 @@
     ],
     'data': [
         # security
-        'security/groupsRefa.xml',
-        'security/ir.model.access.csv',
+        #'security/groupsRefa.xml',
+        #'security/ir.model.access.csv',
         # data
         'data/sequence.xml',
         # wizards
         # reports
-        'reports/report.xml',
-        'reports/Maintenance_report.xml',
+        #'reports/report.xml',
+        #'reports/Maintenance_report.xml',
         # demo
         # views
         'views/maintenance.xml',

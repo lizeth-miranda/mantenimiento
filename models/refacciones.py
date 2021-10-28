@@ -11,4 +11,4 @@ class refa(models.Model):
     fac = fields.Char(string="Factura",)
     costos = fields.Char(string="Costos",)
     refacciones_id = fields.Many2one(
-        'maintenance.request', string="Refacciones Utilizadas",)
+        'maintenance.request', string="Refacciones Usadas",)

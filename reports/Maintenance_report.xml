@@ -212,12 +212,7 @@
                                 </tr>
                             </thead>
                             <tbody class="mante_tbody">
-                                <!-- <tr>
-                                    <td>
-                                        <span></span>
-                                        <span></span>
-                                    </td>
-                                </tr> -->
+                                <tr class="table-active"></tr>
                             </tbody>
                         </table>
                     </div>

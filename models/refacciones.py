@@ -9,7 +9,7 @@ class refa(models.Model):
 
     refa_uti = fields.Char(string="Refacciones Utilizadas",)
     fac = fields.Char(string="Factura",)
-    costos = fields.Char(string="Costos",)
+    costos = fields.Monetary(string="Costos",)
     refacciones_id = fields.Many2one(
         'maintenance.request', string="Refacciones Usadas",)
     currency_id = fields.Many2one('res.currency', 'Currency', required=True,

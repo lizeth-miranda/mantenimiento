@@ -42,17 +42,17 @@
                         </table>
                         <!-- <span>Order #</span> -->
 
-                        <h5>
-                            <strong>Fecha de Solicitud:</strong>
-                            <t class="m-0" t-esc="doc.request_date" />
-                        </h5>
+
+                        <strong>Fecha de Solicitud:</strong>
+                        <t class="m-0" t-esc="doc.request_date" />
+
 
                         <table class="table table-sm o_main_table">
                             <thead>
                                 <tr class="table-active">
                                     <th name="employee_id.name" class="text-left">Nombre del solicitante</th>
                                     <th name="puesto.name" class="text-left">Puesto</th>
-                                    <th name="dpto.name" class="text-left">Dpto</th>
+                                    <th name="dpto.name" class="text-left">Departamento</th>
                                     <th name="fecha_limit" class="text-left">Fecha limite de entrega</th>
                                 </tr>
                             </thead>
@@ -68,7 +68,7 @@
                                         <span t-field="doc.dpto.name" />
                                     </td>
                                     <td name="td_fecha_limit">
-                                        <span t-field="doc.schedule_date" />
+                                        <span t-field="doc.schedule_date" t-options='{"format": "dd/MM/yyyy"}' />
                                     </td>
                                 </tr>
                             </tbody>
@@ -154,9 +154,9 @@
                             </table>
                         </div>
                         <br></br>
-                        <h5>
+                        <p>
                             <strong>Firma de conformidad del usuario:</strong>
-                        </h5>
+                        </p>
 
                         <table class="table table-sm o_main_table">
                             <thead>
@@ -172,6 +172,9 @@
                                 </tr>
                             </tbody>
                         </table>
+
+                        <strong>Fecha Compromiso de Entrega:</strong>
+                        <span t-esc="doc.fecha_comp" />
 
                         <table class="table table-sm o_main_table">
                             <thead>
@@ -197,23 +200,26 @@
                                 </t>
                             </tbody>
                         </table>
-
-                        <div class="row mt32 mb32" id="signs">
-                            <div class="col-auto mw-100 mb-2">
-                                <br></br>
-                                <strong>Firma de conformidad del usuario</strong>
-                                <br></br>
-                                <br></br>
-                                <strong>________________________________</strong>
-                            </div>
-                            <div class="col-auto mw-100 mb-2">
-                                <br></br>
-                                <strong>Firma de quien atendió el servicio</strong>
-                                <br></br>
-                                <br></br>
-                                <strong>________________________________</strong>
-                            </div>
-                        </div>
+                        <strong>Horas Empleadas en el Mantenimiento:</strong>
+                        <span t-esc="doc.duration" t-options='{"widget": "float_time"}' />
+                        <br></br>
+                        <br></br>
+                        <table class="table table-sm o_main_table">
+                            <thead>
+                                <tr class="table-refa">
+                                    <th class="text-center">Firma de conformidad del usuario</th>
+                                    <th class="text-center">Firma de quien atendió el servicio</th>
+                                </tr>
+                            </thead>
+                            <tbody class="mante_tbody">
+                                <!-- <tr>
+                                    <td>
+                                        <span></span>
+                                        <span></span>
+                                    </td>
+                                </tr> -->
+                            </tbody>
+                        </table>
                     </div>
                 </t>
             </t>

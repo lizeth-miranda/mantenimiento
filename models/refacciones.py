@@ -12,3 +12,5 @@ class refa(models.Model):
     costos = fields.Char(string="Costos",)
     refacciones_id = fields.Many2one(
         'maintenance.request', string="Refacciones Usadas",)
+    currency_id = fields.Many2one('res.currency', 'Currency', required=True,
+                                  default=lambda self: self.env.company.currency_id.id)

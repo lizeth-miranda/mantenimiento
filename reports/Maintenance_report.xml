@@ -16,26 +16,23 @@
                                     <th class="text-left">Revisión</th>
                                     <th class="text-left">Fecha de Publicación</th>
                                     <th class="text-left">Fecha de Próxima Revisión</th>
+                                    <th class="text-left">Código</th>
                                 </tr>
                             </thead>
                             <tbody class="mante_tbody">
                                 <tr>
                                     <td>
-                                        <span>1</span>
+                                        <span t-esc="doc.revision" />
                                     </td>
 
                                     <td>
-                                        <span>01/10/2021</span>
+                                        <span t-esc="doc.fecha_publi" />
                                     </td>
                                     <td>
-                                        <span>01/10/2022</span>
+                                        <span t-esc="doc.fecha_prox" />
                                     </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
                                     <td>
-                                        <span>FO 11 OSM 01</span>
+                                        <span t-esc="doc.codigo" />
                                     </td>
                                 </tr>
                             </tbody>

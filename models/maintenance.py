@@ -28,8 +28,10 @@ class mainten(models.Model):
     otr = fields.Boolean(string="Otros ",)
     sign_confor = fields.Char(string="Firma de conformidad del usuario",)
     solucion_mante = fields.Text(string="Solución de Mantenimiento ",)
+    fecha_comp = fields.Date(string="Fecha Compromiso de Entrega",)
     refa_ids = fields.One2many(
         comodel_name='refacciones.line', inverse_name='refacciones_id',)
+    currency_id = fields.Many2one('res.currency', 'Currency',)
 
     @api.model
     def create(self, vals):

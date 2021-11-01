@@ -32,6 +32,10 @@ class mainten(models.Model):
     refa_ids = fields.One2many(
         comodel_name='refacciones.line', inverse_name='refacciones_id',)
     currency_id = fields.Many2one('res.currency', 'Currency',)
+    revision = fields.Char(string="Revisión",)
+    fecha_publi = fields.Date(string="Fecha de Publicación",)
+    fecha_prox = fields.Date(string="Fecha de Próxima Revisión",)
+    codigo = fields.Char(string="Código",)
 
     @api.model
     def create(self, vals):

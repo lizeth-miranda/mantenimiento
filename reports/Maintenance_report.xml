@@ -26,10 +26,10 @@
                                     </td>
 
                                     <td>
-                                        <span t-esc="doc.fecha_publi" />
+                                        <span t-esc="doc.fecha_publi" t-options='{"widget": "date"}' />
                                     </td>
                                     <td>
-                                        <span t-esc="doc.fecha_prox" />
+                                        <span t-esc="doc.fecha_prox" t-options='{"widget": "date"}' />
                                     </td>
                                     <td>
                                         <span t-esc="doc.codigo" />
@@ -41,7 +41,7 @@
 
 
                         <strong>Fecha de Solicitud:</strong>
-                        <t class="m-0" t-esc="doc.request_date" />
+                        <t class="m-0" t-esc="doc.request_date" t-options='{"widget": "date"}' />
 
 
                         <table class="table table-sm o_main_table">
@@ -171,7 +171,7 @@
                         </table>
 
                         <strong>Fecha Compromiso de Entrega:</strong>
-                        <span t-esc="doc.fecha_comp" />
+                        <span t-esc="doc.fecha_comp" t-options='{"widget": "date"}' />
 
                         <table class="table table-sm o_main_table">
                             <thead>

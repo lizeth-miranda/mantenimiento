@@ -117,7 +117,7 @@
                         <div>
                             <table class="table table-striped">
                                 <thead>
-                                    <tr>
+                                    <tr class="table-active">
                                         <th name="repa_inme" class="text-left" width="50">Reparación Inmediata</th>
                                         <th name="repa_comp" class="text-left" width="50">Reposición compra</th>
                                         <th name="repa_alma" class="text-left" width="50">Reposición Almacén</th>
@@ -126,7 +126,7 @@
                                         <th name="espera_rep" class="text-left" width="50">Espera de Reparación</th>
                                     </tr>
                                 </thead>
-                                <tbody class="mante_tbody">
+                                <tbody>
                                     <tr>
                                         <td name="td_inme">
                                             <span t-field="doc.rep_inm" />
@@ -175,7 +175,7 @@
 
                         <table class="table table-sm o_main_table">
                             <thead>
-                                <tr class="table-refa">
+                                <tr class="table-active">
                                     <th name="refa_uti" class="text-center">Refacciones Utilizadas</th>
                                     <th name="factura" class="text-center">Factura</th>
                                     <th name="costos" class="text-center">Costos</th>
@@ -203,7 +203,7 @@
                         <br></br>
                         <table class="table table-sm o_main_table">
                             <thead>
-                                <tr class="table-refa">
+                                <tr class="table-active">
                                     <th class="text-center">Firma de conformidad del usuario</th>
                                     <th class="text-center">Firma de quien atendió el servicio</th>
                                 </tr>

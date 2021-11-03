@@ -56,7 +56,7 @@
                             </tree>
                         </field>
                     </page>
-                    <page string="Revisiones" groups="costoempleado.nomina_group">
+                    <page string="Revisiones" groups="Asistencias.nomina_group">
                         <group>
                             <field name="revision" />
                             <field name="fecha_publi" />

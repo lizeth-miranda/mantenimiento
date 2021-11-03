@@ -44,6 +44,7 @@
                     <page string="Solución de Mantenimiento ">
                         <group>
                             <field name="solucion_mante" />
+                            <field name="fecha_comp" />
                         </group>
                     </page>
                     <page string="Refacciones Utilizadas  ">
@@ -55,7 +56,7 @@
                             </tree>
                         </field>
                     </page>
-                    <page string="Revisiones" groups="Asistencias.nomina_group">
+                    <page string="Revisiones" groups="costoempleado.nomina_group">
                         <group>
                             <field name="revision" />
                             <field name="fecha_publi" />

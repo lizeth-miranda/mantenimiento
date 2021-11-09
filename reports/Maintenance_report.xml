@@ -73,18 +73,17 @@
                         </table>
 
                         <table class="table table-sm o_main_table">
-                            <thead>
-                                <tr class="table-active">
-                                    <th name="desc" class="text-center">¿Se realizó algún movimiento al equipo por el operador?</th>
-                                    <th name="desc" class="text-center">Explique Brevemente:</th>
-                                </tr>
-                            </thead>
                             <tbody class="mante_tbody">
                                 <tr>
-                                    <td>
+                                    <th name="desc" class="text-left">¿Se realizó algún movimiento al equipo por el operador?</th>
+                                    <td WIDTH="50">
                                         <span t-field="doc.pregunta1" />
                                     </td>
-                                    <td>
+
+                                </tr>
+                                <tr>
+                                    <th name="desc" class="text-left">Explique Brevemente:</th>
+                                    <td WIDTH="50">
                                         <span t-field="doc.explicacion" />
                                     </td>
                                 </tr>

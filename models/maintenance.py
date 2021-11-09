@@ -36,6 +36,12 @@ class mainten(models.Model):
     fecha_publi = fields.Date(string="Fecha de Publicación",)
     fecha_prox = fields.Date(string="Fecha de Próxima Revisión",)
     codigo = fields.Char(string="Código",)
+    pregunta1 = fields.Selection([
+        ('si', 'Si'),
+        ('no', 'No')], string="¿Se realizó algún movimiento al equipo por el operador?",)
+    explicacion = fields.Text(string="Explique Brevemente",)
+    observaciones = fields.Text(
+        string="Observaciones del Supervisor ante la solución inmediata",)
 
     @api.model
     def create(self, vals):

@@ -42,7 +42,8 @@
 
                         <strong>Fecha de Solicitud:</strong>
                         <t class="m-0" t-esc="doc.request_date" t-options='{"widget": "date"}' />
-
+                        <br></br>
+                        <br></br>
 
                         <table class="table table-sm o_main_table">
                             <thead>
@@ -174,6 +175,7 @@
                         <p>
                             <strong>Firma de conformidad del usuario:</strong>
                         </p>
+                        <br></br>
                         <table class="table table-sm o_main_table">
                             <thead>
                                 <tr class="table-active">
@@ -205,7 +207,8 @@
 
                         <strong>Fecha Compromiso de Entrega:</strong>
                         <span t-esc="doc.fecha_comp" t-options='{"widget": "date"}' />
-
+                        <br></br>
+                        <br></br>
                         <table class="table table-sm o_main_table">
                             <thead>
                                 <tr class="table-active">

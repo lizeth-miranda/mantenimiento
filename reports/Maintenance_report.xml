@@ -70,6 +70,26 @@
                                 </tr>
                             </tbody>
                         </table>
+
+                        <table class="table table-sm o_main_table">
+                            <thead>
+                                <tr class="table-active">
+                                    <th name="desc" class="text-center">¿Se realizó algún movimiento al equipo por el operador?</th>
+                                    <th name="desc" class="text-center">Explique Brevemente:</th>
+                                </tr>
+                            </thead>
+                            <tbody class="mante_tbody">
+                                <tr>
+                                    <td>
+                                        <span t-field="doc.pregunta1" />
+                                    </td>
+                                    <td>
+                                        <span t-field="doc.explicacion" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
                         <table class="table table-sm o_main_table">
                             <thead>
                                 <tr class="table-active">
@@ -154,7 +174,20 @@
                         <p>
                             <strong>Firma de conformidad del usuario:</strong>
                         </p>
-
+                        <table class="table table-sm o_main_table">
+                            <thead>
+                                <tr class="table-active">
+                                    <th class="text-center">Observaciones del Supervisor ante la solución inmediata</th>
+                                </tr>
+                            </thead>
+                            <tbody class="mante_tbody">
+                                <tr>
+                                    <td>
+                                        <span t-field="doc.observaciones" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                         <table class="table table-sm o_main_table">
                             <thead>
                                 <tr class="table-active">

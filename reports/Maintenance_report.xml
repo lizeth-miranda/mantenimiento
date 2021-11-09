@@ -76,7 +76,7 @@
                             <tbody class="mante_tbody">
                                 <tr>
                                     <th name="desc" class="text-left">¿Se realizó algún movimiento al equipo por el operador?</th>
-                                    <td WIDTH="50">
+                                    <td>
                                         <span t-field="doc.pregunta1" />
                                     </td>
 

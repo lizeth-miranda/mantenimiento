@@ -83,7 +83,7 @@
                                 </tr>
                                 <tr>
                                     <th name="desc" class="text-left">Explique Brevemente:</th>
-                                    <td WIDTH="50">
+                                    <td>
                                         <span t-field="doc.explicacion" />
                                     </td>
                                 </tr>

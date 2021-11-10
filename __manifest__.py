@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Mantenimiento Demsa',
-    'version': '13.4',
+    'version': '13.5',
     'author': 'Demsa',
     'website': '',
     'depends': [
@@ -10,6 +10,7 @@
     'data': [
         # security
         'security/groupsRefa.xml',
+        'security/equipos_mante.xml',
         'security/ir.model.access.csv',
         # data
         'data/sequence.xml',
@@ -21,5 +22,6 @@
         # views
         'views/maintenance.xml',
         'views/refacciones.xml',
+        'views/product_template.xml',
     ],
 }

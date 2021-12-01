@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # instruccion para hacer importaciones desde odoo
 from odoo import api, fields, models, _
-
+from odoo.exceptions import ValidationError
 
 class promaint(models.Model):
     _inherit = 'product.template'

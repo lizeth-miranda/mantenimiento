@@ -18,7 +18,7 @@
                             <field name="modelo" />
                             <field name="num_serie" />
                             <field name="fecha_exp" />
-                            <field name="proveedor" />
+                            <field name="proveedor" options="{'no_create_edit': True, 'no_open': True}" />
                         </group>
                     </group>
                 </page>

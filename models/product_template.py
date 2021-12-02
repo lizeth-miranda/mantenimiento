@@ -3,6 +3,7 @@
 from odoo import api, fields, models, _
 from odoo.exceptions import ValidationError
 
+
 class promaint(models.Model):
     _inherit = 'product.template'
 
@@ -10,11 +11,16 @@ class promaint(models.Model):
     modelo = fields.Char(string="Modelo",)
     proveedor = fields.Many2one(
         string="Proveedor", comodel_name="res.partner",)
+    num_serie = fields.Char(string="Número de Serie",)
+    empleado = fields.Many2one(
+        string="Empleado Responsable", comodel_name="hr.employee",)
+    fecha_exp = fields.Date(string="Fecha Expiración Garantía",)
 
     def enviar(self):
         for record in self:
             buscar = self.env['maintenance.equipment'].search_count([
                 ('serial_no', '=', record.num_serie),
+
             ])
             if buscar > 0:
                 raise ValidationError(
@@ -26,6 +32,8 @@ class promaint(models.Model):
                     'serial_no': record.num_serie,
                     'model': record.modelo,
                     'marca': record.marca,
+                    'warranty_date': record.fecha_exp,
+                    'employee_id': record.empleado.id,
                     'partner_id': record.proveedor.id,
                     'cost': record.standard_price,
                 }

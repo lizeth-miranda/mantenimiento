@@ -14,6 +14,8 @@ class promaint(models.Model):
     num_serie = fields.Char(string="Número de Serie",)
     empleado = fields.Many2one(
         string="Empleado Responsable", comodel_name="hr.employee",)
+    obra = fields.Many2one(
+        comodel_name='account.analytic.account', string="Obra", )
     fecha_exp = fields.Date(string="Fecha Expiración Garantía",)
 
     def enviar(self):
@@ -34,6 +36,7 @@ class promaint(models.Model):
                     'marca': record.marca,
                     'warranty_date': record.fecha_exp,
                     'employee_id': record.empleado.id,
+                    'obra': record.obra.id,
                     'partner_id': record.proveedor.id,
                     'cost': record.standard_price,
                 }

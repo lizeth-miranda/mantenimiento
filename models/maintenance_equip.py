@@ -7,3 +7,5 @@ class mainten(models.Model):
     _inherit = 'maintenance.equipment'
 
     marca = fields.Char(string="Marca",)
+    obra = fields.Many2one(
+        comodel_name='account.analytic.account', string="Obra", )

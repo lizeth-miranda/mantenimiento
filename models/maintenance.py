@@ -42,6 +42,7 @@ class mainten(models.Model):
     explicacion = fields.Text(string="Explique Brevemente",)
     observaciones = fields.Text(
         string="Observaciones del Supervisor ante la solución inmediata",)
+    flota = fields.Many2one(comodel_name='fleet.vehicle', string="Vehiculo",)
 
     @api.model
     def create(self, vals):

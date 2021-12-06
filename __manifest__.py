@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Mantenimiento Demsa',
-    'version': '13.5',
+    'version': '13.6',
     'author': 'Demsa',
     'website': '',
     'depends': [

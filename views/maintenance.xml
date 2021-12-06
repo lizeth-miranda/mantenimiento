@@ -23,6 +23,9 @@
                     <field name="name_seq" readonly="1" />
                 </h1>
             </div>
+            <field name="category_id" position="before">
+                <field name="flota" options="{'no_create_edit': True, 'no_open': True}" attrs='{"readonly": [["equipment_id","!=",False]]}' />
+            </field>
             <xpath expr="//field[@name='equipment_id']" position="before">
                 <field name="puesto" string="Puesto" options="{'no_create_edit': True, 'no_open': True}" />
                 <field name="dpto" string="Departamento" options="{'no_create_edit': True, 'no_open': True}" />

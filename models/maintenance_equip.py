@@ -9,3 +9,4 @@ class mainten(models.Model):
     marca = fields.Char(string="Marca",)
     obra = fields.Many2one(
         comodel_name='account.analytic.account', string="Obra", )
+    sistemas = fields.Boolean(string='Sistemas', default=False,)

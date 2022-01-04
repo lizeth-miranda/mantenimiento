@@ -12,7 +12,7 @@
                 <field name="obra" options="{'no_create_edit': True, 'no_open': True}" />
             </field>
             <field name="category_id" position="after">
-                <field name="sistemas" groups="costoempleado.nomina_group" />
+                <field name="sistemas" groups="Asistencias.nomina_group" />
             </field>
             <xpath expr="//field[@name='partner_id']" position="attributes">
                 <attribute name="attrs">{"invisible": [["sistemas","=",True]]}</attribute>

@@ -11,6 +11,36 @@
             <field name="partner_id" position="after">
                 <field name="obra" options="{'no_create_edit': True, 'no_open': True}" />
             </field>
+            <field name="category_id" position="after">
+                <field name="sistemas" groups="costoempleado.nomina_group" />
+            </field>
+            <xpath expr="//field[@name='partner_id']" position="attributes">
+                <attribute name="attrs">{"invisible": [["sistemas","=",True]]}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='obra']" position="attributes">
+                <attribute name="attrs">{"invisible": [["sistemas","=",True]]}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='partner_ref']" position="attributes">
+                <attribute name="attrs">{"invisible": [["sistemas","=",True]]}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='model']" position="attributes">
+                <attribute name="attrs">{"invisible": [["sistemas","=",True]]}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='marca']" position="attributes">
+                <attribute name="attrs">{"invisible": [["sistemas","=",True]]}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='serial_no']" position="attributes">
+                <attribute name="attrs">{"invisible": [["sistemas","=",True]]}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='effective_date']" position="attributes">
+                <attribute name="attrs">{"invisible": [["sistemas","=",True]]}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='cost']" position="attributes">
+                <attribute name="attrs">{"invisible": [["sistemas","=",True]]}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='warranty_date']" position="attributes">
+                <attribute name="attrs">{"invisible": [["sistemas","=",True]]}</attribute>
+            </xpath>
         </field>
     </record>
     <record id="maintenance_request_view_form" model="ir.ui.view">

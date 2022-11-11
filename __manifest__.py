@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Mantenimiento Demsa',
-    'version': '13.1',
+    'version': '13.2',
     'author': 'Demsa',
     'website': '',
     'depends': [
@@ -17,7 +17,8 @@
         # wizards
         # reports
         'reports/report.xml',
-        'reports/Maintenance_report.xml',
+        #'reports/Maintenance_report.xml',
+        'reports/maintenance_reportv2.xml',
         # demo
         # views
         'views/maintenance.xml',

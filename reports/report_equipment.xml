@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <report id="maintenance_equipment" string="Formato de resguardo" model="maintenance.equipment" report_type="qweb-pdf" name="mantenimiento.maintenance_equipment_template" />
+</odoo>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="maintenance_equipment_view_form" model="ir.ui.view">
+        <field name="name">maintenance.equipment.view.form.inherited</field>
+        <field name="model">maintenance.equipment</field>
+        <field name="inherit_id" ref="maintenance.hr_equipment_view_form" />
+        <field name="arch" type="xml">
+
+            <xpath expr="//page[3]" position='after'>
+                <page string="Revisiones y notas">
+                    <group>
+                        <field name="rev" />
+                        <field name="fecha_publ" />
+                        <field name="fecha_prox" />
+                        <field name="cod" />
+                        <field name="nota" />
+                    </group>
+                </page>
+            </xpath>
+            <xpath expr="//field[@name='partner_id']" position="after">
+
+                <field name="employee" />
+                <field name="fecha" />
+                <field name="department" />
+                <field name="puesto" />
+            </xpath>
+            <xpath expr="//field[@name='partner_ref']" position="after">
+
+                <field name="marca" />
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -27,7 +27,7 @@
         'views/refacciones.xml',
         'views/product_template.xml',
         'views/equipos_sistemas.xml',
-        'views/maintenance_equipment.xml',
+        #'views/maintenance_equipment.xml',
         
     ],
 }

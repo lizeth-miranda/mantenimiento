@@ -14,6 +14,24 @@
             <field name="category_id" position="after">
                 <field name="sistemas" groups="mantenimiento.equipos_sistemas_group" />
             </field>
+            <xpath expr="//page[3]" position='after'>
+                <page string="Revisiones y notas">
+                    <group>
+                        <field name="rev" />
+                        <field name="fecha_publ" />
+                        <field name="fecha_prox" />
+                        <field name="cod" />
+                        <field name="nota" />
+                    </group>
+                </page>
+            </xpath>
+            <xpath expr="//field[@name='partner_id']" position="after">
+
+                <field name="employee" />
+                <field name="fecha" />
+                <field name="department" />
+                <field name="puesto" />
+            </xpath>
             <xpath expr="//field[@name='partner_id']" position="attributes">
                 <attribute name="attrs">{"invisible": [["sistemas","=",True]]}</attribute>
             </xpath>
@@ -53,19 +71,20 @@
                     <field name="name_seq" readonly="1" />
                 </h1>
             </div>
-            <field name="category_id" position="before">
+            <!-- <field name="category_id" position="before">
                 <field name="flota" options="{'no_create_edit': True, 'no_open': True}" attrs='{"readonly": [["equipment_id","!=",False]]}' />
-            </field>
+            </field> -->
             <xpath expr="//field[@name='equipment_id']" position="before">
                 <field name="puesto" string="Puesto" options="{'no_create_edit': True, 'no_open': True}" />
                 <field name="dpto" string="Departamento" options="{'no_create_edit': True, 'no_open': True}" />
                 <field name="cod_obra" string="Código de Obra" options="{'no_create_edit': True, 'no_open': True}" />
             </xpath>
+
             <sheet>
                 <notebook>
                     <page string="Descripción y fallas de Equipo/herramientas">
                         <group>
-                            <!-- <field name="equipo" /> -->
+
                             <field name="marca" />
                             <field name="modelo" />
                             <field name="Numserie" />
